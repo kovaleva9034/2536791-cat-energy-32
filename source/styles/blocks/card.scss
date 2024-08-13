@@ -1,3 +1,7 @@
+.card__link {
+  text-decoration: none;
+}
+
 .card__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -15,3 +19,7 @@
   color: $base-color-text;
 }
 
+.button--show {
+  color: $base-color-text;
+  background-color: #f2f2f2;
+}
