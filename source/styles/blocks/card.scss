@@ -3,23 +3,17 @@
 }
 
 .card__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: #222222;
 }
 
-.card__text .card__termin {
-  font-family: "Lato", sans-serif;
+.card__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: $base-color-text;
-}
-
-.button--show {
-  color: $base-color-text;
-  background-color: #f2f2f2;
 }

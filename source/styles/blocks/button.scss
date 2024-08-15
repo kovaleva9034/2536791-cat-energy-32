@@ -1,5 +1,5 @@
 .button {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -8,4 +8,9 @@
   background-color: $bg-basic-green;
   text-decoration: none;
   border: none;
+}
+
+.button--show {
+  color: $base-color-text;
+  background-color: #f2f2f2;
 }

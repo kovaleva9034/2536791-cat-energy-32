@@ -3,7 +3,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -11,14 +11,14 @@
 }
 
 .example__description {
-  font-family: "Lato", sans-serif;
+  font-family: $primary-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
 
 .example__text {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -31,11 +31,9 @@
   line-height: 12px;
 }
 
-.example__coast .example__amount {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
+.example__coast {
+  font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
 }
