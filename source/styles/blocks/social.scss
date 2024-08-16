@@ -3,3 +3,24 @@
   padding: 0;
   list-style-type: none;
 }
+
+.social__link--vkontakte {
+  mask-image: url("../../icons/social-vk-icon.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #666666;
+}
+
+.social__link--youtube {
+  mask-image: url("../../icons/social-youtube-icon.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #666666;
+}
+
+.social__link--telegram {
+  mask-image: url("../../icons/social-telegram-icon.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #666666;
+}

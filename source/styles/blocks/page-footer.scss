@@ -1,3 +1,12 @@
 .page-footer {
   background-color: #f2f2f2;
 }
+
+.page-footer__copyright {
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../icons/html-academy.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: #666666;
+}

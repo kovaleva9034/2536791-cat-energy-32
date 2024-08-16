@@ -16,8 +16,16 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
-      <img class="logo__image" src="#" width="40" height="48" alt="Логотип">
-      <img class="logo__name" src="#" width="101" height="18" alt="CAT ENERGY">
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/cat-logo-desktop.svg">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/cat-logo-tablet.svg">
+        <img class="logo__image" src="images/cat-logo-mobile.svg" width="33" height="38" alt="Логотип">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-name-header.svg">
+        <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-name-header.svg">
+        <img class="logo__name" src="images/logo-name-header.svg" width="101" height="18" alt="Логотип">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -294,9 +302,9 @@
             <a class="additional-card__button button" href="#">ЗАКАЗАТЬ</a>
           </li>
         </ul>
-        <div class="additional-products__present present">
+        <div class="additional-products__present additional-products__present--gift">
           <h2 class="visually-hidden">Специальное предложение</h2>
-          <p class="present__text">Закажите всe и получите чехол для кота в подарок!</p>
+          <p class="additional-products__present-text">Закажите всe и получите чехол для кота в подарок!</p>
         </div>
         <section class="subscribe">
           <h2 class="subscribe__title">Акции и новинки</h2>
@@ -326,7 +334,9 @@
         </div>
       </section>
       <a class="page-footer__logo logotype" href="index.html">
-        <img class="logotype__img" src="#" width="101" height="18" alt="CAT ENERGY">
+        <picture>
+          <img class="logo__image" src="images/logo-name-footer.svg" width="128" height="24" alt="CAT ENERGY">
+        </picture>
       </a>
       <ul class="page-footer__social social">
         <li class="social__item">
@@ -340,6 +350,7 @@
         </li>
       </ul>
       <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <span class="page-footer__logo">HTML Academy</span>
     </div>
   </footer>
 </body>
