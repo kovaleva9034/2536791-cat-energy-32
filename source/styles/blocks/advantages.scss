@@ -6,8 +6,41 @@
   color: #000000;
 }
 
-.advantages__item {
+.advantages__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+}
+
+.advantages__item {
+  position: relative;
+
+  &--health::before {
+    background-image: url("../../icons/health-icon.svg");
+    background-size: 30px 32px;
+  }
+
+  &--powder::before {
+    background-image: url("../../icons/powder-icon.svg");
+    background-size: 26px 29px;
+  }
+
+  &--eating::before {
+    background-image: url("../../icons/eating-icon.svg");
+    background-size: 25px 30px;
+  }
+
+  &--changes::before {
+    background-image: url("../../icons/changes-icon.svg");
+    background-size: 26px 31px;
+  }
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-basic-green;
+  background-repeat: no-repeat;
 }

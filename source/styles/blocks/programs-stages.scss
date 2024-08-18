@@ -2,6 +2,18 @@
   background-color: #eaeaea;
 }
 
+.programs-stages__item--loss {
+  background-image: url("../../icons/cat-slim-icon.svg");
+  background-size: 36px 50px;
+  background-repeat: no-repeat;
+}
+
+.programs-stages__item--gain {
+  background-image: url("../../icons/cat-weight-gain-icon.svg");
+  background-size: 67px 28px;
+  background-repeat: no-repeat;
+}
+
 .programs-stages__title {
   font-family: $secondary-font;
   font-weight: 400;
@@ -18,7 +30,7 @@
   color: $base-color-text;
 }
 
-.programs-stages__button {
+.programs-stages__link {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
