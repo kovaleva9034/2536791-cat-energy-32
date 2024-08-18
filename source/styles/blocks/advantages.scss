@@ -18,25 +18,21 @@
   &--health::before {
     background-image: url("../../icons/health-icon.svg");
     background-size: 30px 32px;
-    background-repeat: no-repeat;
   }
 
   &--powder::before {
     background-image: url("../../icons/powder-icon.svg");
     background-size: 26px 29px;
-    background-repeat: no-repeat;
   }
 
   &--eating::before {
     background-image: url("../../icons/eating-icon.svg");
     background-size: 25px 30px;
-    background-repeat: no-repeat;
   }
 
   &--changes::before {
     background-image: url("../../icons/changes-icon.svg");
     background-size: 26px 31px;
-    background-repeat: no-repeat;
   }
 }
 
