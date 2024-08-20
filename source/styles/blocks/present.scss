@@ -1,0 +1,26 @@
+.present {
+  color: #ffffff;
+  background-color: $bg-basic-green;
+  min-height: 290px;
+  background-image: url("../../images/cat-case-mobile@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    background-image: url("../../images/cat-case-tablet@2x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 288px;
+    background-image: url("../../images/cat-case-desktop@2x.png");
+  }
+}
+
+.present__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}

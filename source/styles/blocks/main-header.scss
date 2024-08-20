@@ -1,0 +1,27 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/hero-background-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  height: 38px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
+}
