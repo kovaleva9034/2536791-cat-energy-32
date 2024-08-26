@@ -1,4 +1,6 @@
 .page__body {
   font-family: $primary-font;
   color: $base-color-text;
+  min-width: 320px;
+  margin: 0;
 }

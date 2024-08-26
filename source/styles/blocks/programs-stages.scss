@@ -1,17 +1,71 @@
 .programs-stages {
-  background-color: #eaeaea;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
-.programs-stages__item--loss {
+.programs-stages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+
+.programs-stages__item {
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.programs-stages__item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: $bg-basic-green;
+  border-radius: 50%;
+  top: 24px;
+  left: 20px;
+}
+
+.programs-stages__item::after {
+  content: "";
+  position: absolute;
+}
+
+.programs-stages__item:nth-child(1)::after {
+  width: 36px;
+  height: 50px;
   background-image: url("../../icons/cat-slim-icon.svg");
   background-size: 36px 50px;
-  background-repeat: no-repeat;
+  top: 20px;
+  left: 26px;
 }
 
-.programs-stages__item--gain {
+.programs-stages__item:nth-child(2)::after {
+  width: 68px;
+  height: 28px;
   background-image: url("../../icons/cat-weight-gain-icon.svg");
   background-size: 67px 28px;
-  background-repeat: no-repeat;
+  top: 35px;
+  left: 10px;
 }
 
 .programs-stages__title {
@@ -21,13 +75,31 @@
   line-height: 37px;
   text-transform: uppercase;
   color: #000000;
+  padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programs-stages__description {
+  width: 227px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+  }
 }
 
 .programs-stages__link {
@@ -39,4 +111,9 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

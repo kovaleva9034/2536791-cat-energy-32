@@ -1,5 +1,29 @@
 .contacts {
   background-color: #ffffff;
+  position: relative;
+}
+
+.contacts--dark {
+  background-color: #f2f2f2;
+}
+
+.contacts__container {
+  width: 280px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565;
+    height: 199px;
+    padding: 60px 80px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: #ffffff;
+  }
 }
 
 .contacts__text {
@@ -9,6 +33,13 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+    margin-right: 308px;
+  }
 }
 
 .contacts__address {
@@ -16,4 +47,12 @@
   font-size: 14px;
   line-height: 20px;
   color: $base-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    margin-left: auto;
+    width: 157px;
+  }
 }

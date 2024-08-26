@@ -1,0 +1,36 @@
+.main-header--background {
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/hero-background-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+}
+
+.main-header__wrapper-logo {
+  display: flex;
+  align-items: center;
+  padding: 13px 14px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  height: 38px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
+}
