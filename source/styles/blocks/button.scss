@@ -1,4 +1,6 @@
 .button {
+  display: flex;
+  justify-content: center;
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
@@ -8,10 +10,13 @@
   background-color: $bg-basic-green;
   text-decoration: none;
   border: none;
+  padding: 10px;
+  min-height: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    min-height: 54px;
   }
 }
 

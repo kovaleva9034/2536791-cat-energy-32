@@ -3,14 +3,16 @@
   position: relative;
 }
 
+&--dark {
+  background-color: #f2f2f2;
+}
+
 .contacts__container {
-  width: 320px;
+  width: 280px;
   display: flex;
-  justify-content: space-between;
-  padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 61px;
+    width: 628px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,6 +37,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    width: 163px;
+    margin-right: 308px;
   }
 }
 
@@ -48,5 +52,7 @@
     font-size: 16px;
     line-height: 20px;
     color: #444444;
+    margin-left: auto;
+    width: 157px;
   }
 }
